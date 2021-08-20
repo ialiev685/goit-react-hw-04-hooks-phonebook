@@ -1,4 +1,3 @@
-import React from "react";
 import { useState } from "react";
 import "./ContactForm.scss";
 
@@ -26,6 +25,8 @@ const ContactForm = ({ onSubmit }) => {
     e.preventDefault();
 
     onSubmit({ name, number });
+    setName("");
+    setNumber("");
   };
 
   return (
